@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Website</title>
+    <style>
+        /* Your CSS Styles */
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Click to Change Color</button>
+    
+    <script>
+        function changeColor() {
+            document.body.style.backgroundColor = randomColor();
+        }
+
+        function randomColor() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
+    </script>
+</body>
+</html>
